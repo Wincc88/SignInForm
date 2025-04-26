@@ -1,0 +1,15 @@
+.wholebody {
+    display: flex;
+    background-color: aquamarine;
+    border: 2px solid greenyellow;
+}
+
+.picturebody {
+    background-color: antiquewhite;
+    border: 2px solid saddlebrown;
+}
+
+.formbody {
+    background-color: white;
+    border: 2px solid slategrey;
+}
