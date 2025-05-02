@@ -9,24 +9,156 @@
 <body>
 
     <div class="container">
-        <p>some text here</p>
 
             <div class="picturebody">
 
-                <p>the picture body also with some text</p>
+                <img class="pictureimage" 
+                src="https://fastly.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA" 
+                alt="nature view">
 
                   <div class="logoside">
-                    <p>logo here</p>
+                    <button>Nezer Cleans</button>
                   </div>
 
                   <div class="formbody">
-                      <p>The form body</p>
+
+                       <button id="top_logo" type="button">Nezer Cleans</button>
+
+                      <div class="noteshere">
+
+                        <p>Sign-up to receive discounts and know about our latest services.</p>
+                        <p>We are always ready to serve. </p>
+
+                        
+                        <p><a href="#">Log in here</a> if already you have an account</p>
+                        
+
+                      </div>
+
+                      
+
+                        <form name="nezerform" action="#nezercleans#/path" onsubmit="return validatePass()" method="post">
+
+                            
+                            <div class="namephoemailpassdiv">
+                                
+                                    <div class="wholenamesdiv">
+
+                                        <div class="firstnameDiv">
+                                            <div>
+                                                <label for="first_name">FIRST NAME</label> 
+                                            </div>
+
+                                            <div>
+                                                <input type="text" name="first_name" id="first_name">
+                                            </div>
+                                        </div>
+
+                                        <div class="lastNameDiv">
+                                            <div>
+                                                <label for="last_name">LAST NAME</label>
+                                            </div>
+
+                                            <div>
+                                                <input type="text" name="last_name" id="last_name">
+                                            </div>
+                                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="emailphonediv">
+
+                                        <div class="emailDiv">
+                                            <div>
+                                                <label for="user_email">EMAIL</label> 
+                                            </div>
+
+                                            <div>
+                                                <input type="email" name="email" id="user_email" placeholder="you@example.com" 
+                                                required>
+                                            </div>
+                                        </div>
+
+                                        <div class="phoneDiv">
+                                            <div>
+                                                <label for="phone_number">PHONE NUMBER</label>
+                                            </div>
+
+                                            <div>
+                                                <input type="number" name="phone_number" id="phone_number">
+                                            </div>
+                                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="passworddiv">
+
+                                        <div class="passDiv">
+                                            <div>
+                                                <label for="user_password">PASSWORD</label> 
+                                            </div>
+
+                                            <div>
+                                                <input type="password" name="password" id="user_password" value="" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="confirmPassDiv">
+                                            <div>
+                                                <label for="confirm_pass">CONFIRM PASSWORD</label>
+                                            </div>
+
+                                            <div>
+                                                <input type="password" name="confirm_pass" id="confirm_pass"  value="" required>
+                                            </div>
+                                                            
+                                        </div>
+                                    </div>
+                            </div>    
+
+                            
+
+                            <div class="buttonhere">
+
+                                <input type="submit" value="Create Account">
+                                
+
+                                <p>Already have an account? <span><a href="#" target="_blank">Log in</a></span></p>
+
+                            </div>
+
+                        </form>
+                        
                   </div>
 
 
             </div>
 
     </div>
+
+    <script>
+        
+
+        function validatePass() {
+            
+            let PassConfirm = document.forms["nezerform"]["confirm_pass"].value;
+            let validPass = document.forms["nezerform"]["password"].value;
+
+            if (PassConfirm !== "" && validPass !== "") {
+
+                if (PassConfirm !== validPass) {
+                    alert("the password does not match with re-confired password. Please enter a password and confirm");
+                }
+
+                else {
+                    alert("Yaay! your account has been created");
+                }
+            }
+        }
+
+
+
+    </script>
     
 </body>
 </html>
