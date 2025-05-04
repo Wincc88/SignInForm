@@ -146,13 +146,16 @@ input:focus {
 }
 
 @media screen and (max-width: 600px) {
+
     .container {
         display: flex;
+        flex-direction: column;
     }
 
     .logoside {
         display: flex;
         flex: 1;
+        flex-direction: column;
         background-color: rgb(91, 91, 196);
         width: 35%;
         height: 15%;
@@ -168,21 +171,21 @@ input:focus {
 
      .noteshere {
         display: flex;
+        flex-direction: column;
         flex: 2;
      }
 
      .namephoemailpassdiv {
         display: flex;
+        flex-direction: column;
         flex: 6;
      }
 
      .buttonhere {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-     }
-
-    
-    
-    
+     } 
+  
 }
