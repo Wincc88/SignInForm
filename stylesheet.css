@@ -150,6 +150,7 @@ input:focus {
     .container {
         display: flex;
         flex-direction: column;
+        border-color: black;
     }
 
     .logoside {
