@@ -144,3 +144,45 @@ input:focus {
     outline: none;    /** helps with overriding browser specificity **/
     box-shadow: 0 0 0 1px #185ae8; /** covers browser borders **/
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+    }
+
+    .logoside {
+        display: flex;
+        flex: 1;
+        background-color: rgb(91, 91, 196);
+        width: 35%;
+        height: 15%;
+        left: 0;
+        border: 1px solid rgb(15, 214, 78);
+        position: absolute;
+        z-index: -1;
+        opacity: 0.5;
+        margin-top: 15%;
+        margin-left: 15px;
+    
+     }
+
+     .noteshere {
+        display: flex;
+        flex: 2;
+     }
+
+     .namephoemailpassdiv {
+        display: flex;
+        flex: 6;
+     }
+
+     .buttonhere {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+    
+    
+    
+}
