@@ -150,7 +150,7 @@ input:focus {
     .container {
         display: flex;
         flex-direction: column;
-        border: 5px solid black;
+        border: 3px solid black;
     }
 
     
@@ -159,6 +159,7 @@ input:focus {
         display: flex;
         flex-direction: column;
         border: 5px solid yellow;
+        margin: 0;
         margin-bottom: 5px;
         position: fixed;
         
@@ -167,7 +168,7 @@ input:focus {
     .logoside {
         display: flex;
         flex-direction: column;
-        border: 3px solid hotpink;
+        border: 1px solid hotpink;
         margin-top: 2px;
         width: 70%;
        
@@ -177,7 +178,16 @@ input:focus {
         flex-direction: column;
         border: 2px solid hotpink;
         width: 100%;
-        margin-top: 40%;
+        margin-top: 20%;
+        margin-bottom: 15%;
+     }
+
+     .noteshere, .wholenamesdiv, .emailphonediv, .passworddiv, .firstnameDiv, 
+     .lastNameDiv, .emailDiv, .phoneDiv, .passDiv, .confirmPassDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
      }
 
   
