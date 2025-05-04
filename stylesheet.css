@@ -153,40 +153,32 @@ input:focus {
         border: 5px solid black;
     }
 
+    
+
+    .picturebody {
+        display: flex;
+        flex-direction: column;
+        border: 5px solid yellow;
+        margin-bottom: 5px;
+        position: fixed;
+        
+    }
+
     .logoside {
         display: flex;
-        flex: 1;
         flex-direction: column;
-        background-color: rgb(91, 91, 196);
-        width: 35%;
-        height: 15%;
-        left: 0;
-        border: 1px solid rgb(15, 214, 78);
-        position: absolute;
-        z-index: -1;
-        opacity: 0.5;
-        margin-top: 15%;
-        margin-left: 15px;
-    
-     }
-
-     .noteshere {
+        border: 3px solid hotpink;
+        margin-top: 2px;
+        width: 70%;
+       
+    }
+     .formbody {
         display: flex;
         flex-direction: column;
-        flex: 2;
+        border: 2px solid hotpink;
+        width: 100%;
+        margin-top: 40%;
      }
 
-     .namephoemailpassdiv {
-        display: flex;
-        flex-direction: column;
-        flex: 6;
-     }
-
-     .buttonhere {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-     } 
   
 }
