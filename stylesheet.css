@@ -151,6 +151,7 @@ input:focus {
         display: flex;
         flex-direction: column;
         border: 3px solid black;
+        
     }
 
     
@@ -158,25 +159,31 @@ input:focus {
     .picturebody {
         display: flex;
         flex-direction: column;
-        border: 5px solid yellow;
+        border: 1px solid rgb(217, 244, 215);
         margin: 0;
         margin-bottom: 5px;
         position: fixed;
+        overflow: auto;
         
     }
 
     .logoside {
         display: flex;
         flex-direction: column;
-        border: 1px solid hotpink;
-        margin-top: 2px;
+        border: 1px solid rgb(153, 147, 150); 
+        margin-top: 4px;
+        margin-left: 50px;
         width: 70%;
-       
+        height: 65px;  
+    }
+    .logoside button {
+        display: flex;
+        margin: auto;
     }
      .formbody {
         display: flex;
         flex-direction: column;
-        border: 2px solid hotpink;
+        border: 2px solid rgb(246, 205, 225);
         width: 100%;
         margin-top: 20%;
         margin-bottom: 15%;
